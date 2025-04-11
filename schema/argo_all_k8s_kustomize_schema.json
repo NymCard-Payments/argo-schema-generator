@@ -1337,7 +1337,9 @@
                     "items": {
                         "default": {},
                         "$ref": "#/definitions/io.argoproj.argocd.v1alpha1.ApplicationSource"
-                    }
+                    },
+                    "x-kubernetes-patch-merge-key": "ref",
+                    "x-kubernetes-patch-strategy": "merge"
                 },
                 "syncPolicy": {
                     "description": "SyncPolicy controls when and how a sync will be performed",
